@@ -6,15 +6,15 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.6</version>
+        <version>2.5.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>ru.netology</groupId>
-    <artifactId>netology-authorization-service</artifactId>
+    <artifactId>netology-conditional</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>authorization-service</name>
-    <description>netology-authorization-service</description>
+    <name>netology-conditional</name>
+    <description>netology-conditional</description>
 
     <properties>
         <java.version>11</java.version>
@@ -33,10 +33,10 @@
         </dependency>
 
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
-            <scope>provided</scope>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>1.16.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -45,14 +45,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
